@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="background.css">
+
+  </head>
+  <body>
+
+    <center>
+    <i>
+    <h1 style="font-size:60px;color:white;">Portfolio</h1>
+    </center>
+    <button onclick="typeWriter()"><i><show>Know me</i></button><br>
+    <button onclick="aboutme()">About me</button><br>
+     <p id="demo"><img src="10.png" width="20px "></p>
+     <p id="about"><img src="10.png" width="20px "></p>
+      <center>
+    </center>
+
+    <center>
+    <footer> <a href="https://www.instagram.com/accounts/login/"><img src="insta.jfif" height="105"width="105"></a>
+              <a href="https://www.instagram.com/accounts/login/"><img src="lin.png" height="105"width="105"></a>
+     </center>
+    <script>
+    var i = 0;
+    var j=0;
+    var txt = 'Akshay k Prasad,I am currently pursuing my bachelors degree form Sahrdaya engineering college of engineering and technology';
+    var txt1 = "A young enthusiasitic learner who loves to learn new things"
+    var speed = 50;
+
+    function typeWriter() {
+      if (i < txt.length) {
+        document.getElementById("demo").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+
+    function aboutme() {
+      if (j < txt1.length) {
+        document.getElementById("about").innerHTML += txt1.charAt(j);
+        j++;
+        setTimeout(aboutme, speed);
+      }
+    }
+
+
+    </script>
+  </body>
+
+</html>
